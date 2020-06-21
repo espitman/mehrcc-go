@@ -7,7 +7,7 @@ import (
 )
 
 var rdb = redis.NewClient(&redis.Options{
-	Addr:     "127.0.0.1:6379",
+	Addr:     "37.152.183.146:6379",
 	Password: "",
 	DB:       0,
 })

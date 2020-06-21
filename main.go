@@ -28,7 +28,7 @@ func main() {
 		Credentials:     true,
 		ValidateHeaders: false,
 	}))
-	r.GET("/ping", func(c *gin.Context) {
+	r.GET("/home", func(c *gin.Context) {
 		wg.Add(7)
 		go consultant.GetConsultants(&wg)
 		go project.GetProjects(&wg)
